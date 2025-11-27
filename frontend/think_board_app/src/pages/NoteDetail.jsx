@@ -75,13 +75,15 @@ const NoteDetail = () => {
         <div className="max-w-2xl mx-auto">
           <div className="flex items-center justify-between mb-6">
             <Link to="/" className="btn btn-ghost">
-              <ArrowLeftIcon className="h-5 w-5" /> Back to Notes
+              <ArrowLeftIcon className="h-5 w-5" />
+              <span className="hidden md:inline">Back to Notes</span>
             </Link>
             <button
               onClick={handleDelete}
               className="btn btn-error btn-outline"
             >
-              <Trash2Icon className="h-5 w-5" /> Delete Note
+              <Trash2Icon className="h-5 w-5" />
+              <span className="hidden md:inline">Delete Note</span>
             </button>
           </div>
           <div className="card bg-base-100">
